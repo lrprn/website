@@ -1,21 +1,47 @@
 <?php
+/**
+ * Created by PhpStorm.
+ * User: allen
+ * Date: 9/26/17
+ * Time: 4:16 PM
+ */
+include("../inc/config/config.php");
+include('../inc/login/userClass.php');
+$userClass = new userClass();
 
-include("../inc/config/auth.php"); //include auth.php file on all secure pages ?>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Welcome Home</title>
-<link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-<div class="form">
-<p>Welcome <?php echo $_SESSION['username']; ?>!</p>
-<p>This is secure area.</p>
-<p><a href="dashboard.php">Dashboard</a></p>
-<a href="logout.php">Logout</a>
-
-
-<br /><br /><br /><br />
-</body>
-</html>
+$errorMsgReg='';
+$errorMsgLogin='';
+/* Login Form */
+if (!empty($_POST['loginSubmit']))
+{
+    $usernameEmail=$_POST['usernameEmail'];
+    $password=$_POST['password'];
+    if(strlen(trim($usernameEmail))>1 && strlen(trim($password))>1 )
+    {
+        $uid=$userClass->userLogin($usernameEmail,$password);
+        if($uid)
+        {
+            $url=BASE_URL.'home.php';
+            header("Location: $url"); // Page redirecting to home.php
+        }
+        else
+        {
+            $errorMsgLogin="Please check login details.";
+        }
+    }
+}
+?>
+<div class="w3-center">
+<div id="login">
+<h3>Login</h3>
+<form method="post" action="" name="login">
+<label>Username or Email</label>
+<input type="text" name="usernameEmail" autocomplete="off" />
+<label>Password</label>
+<input type="password" name="password" autocomplete="off"/>
+<div class="errorMsg"><?php echo $errorMsgLogin; ?></div>
+<input type="submit" class="button" name="loginSubmit" value="Login">
+    <a href="register.php">REGISTER</a>
+</form>
+</div>
+</div>
