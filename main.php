@@ -12,7 +12,9 @@ require 'inc/helper/background.php';
 ?>
 
 <div class="w3-center w3-text-red">
-
+<br>
+    <br>
+    <br>
     <h1>How To Play</h1>
     <h2>We will be listting how to play once the roleplaying is setup</h2>
 
