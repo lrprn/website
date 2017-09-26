@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /inc/
+Disallow: /img/
+Sitemap: https://lrprn.com/sitemap.xml

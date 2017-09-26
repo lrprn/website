@@ -1,0 +1,28 @@
+    /* TEAM */
+
+    Your title: Wayne Meadows
+
+    Site: NONE
+
+    Email: NONE
+
+
+    Twitter: xffzo
+
+
+    Location: United States
+
+    /* THANKS */
+
+
+    Name: My Fiance
+
+    /* SITE */
+
+    Last update: 09/25/2017
+
+
+    Standards: HTML, HTML5, ,JAVASCRIPT, CSS, PHP7
+
+
+    Software: Phpstorm
