@@ -7,6 +7,7 @@
  */
 ?>
 <br>
+
 <div class="footer w3-black w3-center">
     <div class="fb-like" data-href="https://lrprn.com" data-layout="button" data-action="like" data-size="small" data-show-faces="false" data-share="true"></div>
     <div class="fb-send" data-href="https://lrprn.com"></div>
