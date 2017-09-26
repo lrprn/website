@@ -19,7 +19,7 @@ if($_SESSION['ip'] != $_SERVER['REMOTE_ADDR'])
 if(!empty($_SESSION['uid']))
 {
     $session_uid=$_SESSION['uid'];
-    include('class/userClass.php');
+    include('../inc/config/login/userClass.php');
     $userClass = new userClass();
 }
 if(empty($session_uid))

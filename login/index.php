@@ -6,11 +6,12 @@
  * Time: 4:16 PM
  */
 include("../inc/config/config.php");
-include('../inc/login/userClass.php');
+include('../inc/config/login/userClass.php');
 $userClass = new userClass();
 
 $errorMsgReg='';
 $errorMsgLogin='';
+
 /* Login Form */
 if (!empty($_POST['loginSubmit']))
 {

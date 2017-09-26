@@ -6,8 +6,8 @@
  * Time: 4:25 PM
  */
 
-include('../inc/config/login/config.php');
-include('../inc/config/login/session.php');
+include('../inc/config/config.php');
+include('session.php');
 $userDetails=$userClass->userDetails($session_uid);
 ?>
 <h1>Welcome <?php echo $userDetails->name; ?></h1>

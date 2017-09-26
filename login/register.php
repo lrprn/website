@@ -6,7 +6,7 @@
  * Time: 4:18 PM
  */
 include("../inc/config/config.php");
-include('../inc/login/userClass.php');
+include('../inc/config/login/userClass.php');
 $userClass = new userClass();
 
 /* Signup Form */
