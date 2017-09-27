@@ -12,6 +12,8 @@ require '../inc/helper/background.php';
 
 $userDetails=$userClass->userDetails($session_uid);
 ?>
+<br>
+<br>
 <div class="w3-center w3-text-red">
 
 <h1>Welcome <?php echo $userDetails->name; ?></h1>
