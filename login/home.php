@@ -5,10 +5,10 @@
  * Date: 9/26/17
  * Time: 4:25 PM
  */
-require '../inc/important/header.php';
+require '../inc/config/login/important/header.php';
 include('../inc/config/config.php');
 include('session.php');
-require '../inc/helper/background.php';
+require '../inc/helper/login/background.php';
 
 $userDetails=$userClass->userDetails($session_uid);
 ?>
