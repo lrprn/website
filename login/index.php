@@ -32,8 +32,6 @@ if (!empty($_POST['loginSubmit']))
     }
 }
 ?>
-<?php
-?>
 <div class="w3-center">
 <div id="login">
 <h3>Login</h3>
